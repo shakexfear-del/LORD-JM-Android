@@ -1,0 +1,14 @@
+LORD JM - Build APK using only your Android phone
+
+This project includes a GitHub Actions workflow that installs Java, Gradle and Android SDK on a temporary cloud runner and builds the APK. Nothing needs to be installed on your phone.
+
+1. Open https://github.com in your phone browser and sign in (create an account if needed).
+2. Create a new repository. You can name it LORD-JM-Android.
+3. Upload the CONTENTS of the LORD-JM-Android folder from this ZIP to the repository. Make sure the .github/workflows/android-build.yml file is included. If GitHub's mobile upload does not show hidden folders, use GitHub's web upload on desktop mode or GitHub's mobile app/browser file picker that includes hidden files.
+4. Commit the files to the main branch.
+5. Open the repository's Actions tab, select "Build LORD JM APK", and tap "Run workflow" if it did not start automatically.
+6. Wait for the workflow to finish successfully.
+7. Open the completed workflow run, scroll to Artifacts, and download LORD-JM-debug-apk.zip.
+8. Extract that ZIP on your phone and install the APK. Android may ask you to allow installation from that browser/file manager.
+
+The output is a DEBUG/test APK, not a Play Store release-signed APK. Build success depends on the source compiling correctly; check the Actions log if it fails.
